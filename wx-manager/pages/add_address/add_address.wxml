@@ -1,0 +1,41 @@
+<!--pages/add_address/add_address.wxml-->
+
+<import src="../../model/model.wxml"/>
+<form bindsubmit="formSubmit" >
+
+  <view class="section">
+      <label><text>收货人</text><input name="username"/></label>
+  </view>
+  <view class="section">
+      <label><text>手机号</text><input maxlength="11" name="phone"/></label>
+  </view>
+
+
+  <view class="animation-button section" bindtap="translate">
+    <text>城市</text>
+    <input name="city" value='{{province}} {{city}} {{county}}' disalbed></input>
+  </view>
+  <template is="areaData" data="{{...item}}"/>
+
+  <view class="section">
+     <label>
+     <text>详细地址</text>
+     <input maxlength="40"  name="address"/>
+     </label>
+  </view>
+
+
+  <view class="section">
+     <label>
+     <text>邮编</text>
+     <input  name="email"/>
+     </label>
+  </view>
+
+
+  <view class="btn-area">
+   <button formType="submit"  class="savebtn">保存</button>
+      <!-- <view formType="submit">保存</view>   -->
+  </view>
+</form>
+

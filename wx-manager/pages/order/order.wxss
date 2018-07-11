@@ -1,0 +1,32 @@
+.scroll-view_H{
+  white-space: nowrap;
+  border-bottom:1px solid #ccc;
+  position:fixed;
+  top:0;
+  z-index:10;
+  background:#fff;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 150rpx;
+  box-sizing: border-box;
+}
+
+
+.on{
+  color: #c80611;
+  border-bottom:2px solid #c80611;
+ 
+}
+.list-liu .swiper-tab-list{
+  text-align: center;
+  line-height: 85rpx;
+  font-size: 34rpx;
+}
+.secSwiper swiper-item{height:100%;}
+
+
+view{font-size:30rpx;}
+
+.all{margin:30% auto;text-align: center;font-size:40rpx; color:#888888;}
+.all image{width:400rpx;height:300rpx;display: block;margin:0 auto;}

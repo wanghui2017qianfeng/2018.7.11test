@@ -1,0 +1,54 @@
+/* pages/shopcar/shopcar.wxss */
+.page{width:750rpx;font-size:30rpx}
+.itembox{border-bottom:1px solid #ccc;padding:30rpx 0;}
+.main{margin-bottom:100rpx;}
+image{float:left;margin-right:20rpx;}
+
+/* .checkbox{float:left;margin:80rpx 10rpx;}
+ */
+
+ .my-check{float:left;margin:80rpx 20rpx;}
+
+.left1{float:left;width:420rpx;text-overflow: ellipsis;overflow: hidden;white-space: nowrap}
+.numbox{display: flex;flex-direction: row;border:1px solid #ccc;width:240rpx;margin-top:20rpx;border-radius:10rpx;}
+.numbox view{width:80rpx;text-align: center;font-size: 40rpx;}
+.numbox input{width:100rpx;text-align: center;min-height:65rpx;display: block;line-height:65rpx;}
+.del{width:100rpx;height:50rpx;border:1px solid #c6c6c7;font-size:35rpx;text-align: center;background:#ccc;float:right;margin-top:-50rpx;border-radius:10rpx;color:#fff;}
+.right{float:left;width:420rpx;}
+
+.countbox{position: fixed;bottom:0;height:100rpx;background:#2eaddf;width:100%;z-index:8;font-size:35rpx;line-height: 100rpx;}
+.jiesuan{color:#fff;width:30%;text-align:center;}
+.allopt,.money{width:35%;background:#f5f5f5}
+
+/* .cc{margin:0rpx 10rpx;} */
+.all-check{margin:20rpx;}
+
+
+/*  重写 checkbox 样式  */
+/* 未选中的 背景样式 */
+checkbox .wx-checkbox-input{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx; /* 背景的宽 */
+   height: 40rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   /* border: none; */
+   background: red;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   border-radius: 50%;/* 圆角 */
+   width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+
+.right .price{color:#fc5449;font-weight:600;margin-top:20rpx;font-size:35rpx;}

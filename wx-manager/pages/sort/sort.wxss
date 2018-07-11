@@ -1,0 +1,75 @@
+
+.shop{width:90%;margin:20rpx auto;border-radius:30rpx;padding:10rpx;background:#f5f5f5;}
+.shop image{
+  width:100rpx;height:100rpx;border-radius:50%;float:left;
+}
+.shop .title{font-size:35rpx;color:#000;font-weight:700;line-height: 100rpx;margin-left: 30rpx;float: left;}
+
+.content{
+  margin-top:20rpx;
+  border-top-left-radius:30rpx;
+  border-top-right-radius:30rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1; 
+  color:#333;
+  font-size:35rpx;
+}
+.hide{
+ display: -webkit-box;
+}
+.show{
+ display: block;
+}
+/* .fBtn{
+  background:#fe6f52;
+  width:100rpx;height:100rpx;
+  border-radius: 50%;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  text-align: center;
+  position: fixed;
+  z-index:10;
+  bottom:300rpx;
+  right:0;
+  color:#fff;
+} */
+
+
+.fBtn {
+  width:100rpx;height:100rpx;
+  border-radius: 50%;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  text-align: center;
+  position: fixed;
+  z-index:10;
+  bottom:300rpx;
+  right:0;
+ 
+	border:1px solid #84bbf3;
+	background:-moz-linear-gradient( center top, #bddbfa 8%, #80b5ea 97% );
+	background:-ms-linear-gradient( top, #bddbfa 8%, #80b5ea 97% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bddbfa', endColorstr='#80b5ea');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(8%, #bddbfa), color-stop(97%, #80b5ea) );
+	background-color:#bddbfa;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:0px 0px 0px #528ecc;
+ 	-webkit-box-shadow:inset 0px 0px 0px -50px #dcecfb;
+ 	-moz-box-shadow:inset 0px 0px 0px -50px #dcecfb;
+ 	box-shadow:inset 0px 0px 0px -50px #dcecfb;
+}
+.fBtn:hover {
+	background:-moz-linear-gradient( center top, #80b5ea 8%, #bddbfa 97% );
+	background:-ms-linear-gradient( top, #80b5ea 8%, #bddbfa 97% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80b5ea', endColorstr='#bddbfa');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(8%, #80b5ea), color-stop(97%, #bddbfa) );
+	background-color:#80b5ea;
+}
+.fBtn:active {
+	position:relative;
+	top:1px;
+}

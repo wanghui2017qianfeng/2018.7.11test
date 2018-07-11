@@ -1,0 +1,60 @@
+
+
+<view class="topsearch clearfix">
+  <view class="clearfix sousuobox">
+      <view class="jq fl">JQ</view>
+      <image src="../../images/sousuo.png" style="width:50rpx;height:50rpx" mode="aspectFill" class="fl"></image>
+      <input placeholder='搜索' class="sousuo fl" bindfocus="search"></input>
+  </view> 
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode='aspectFill'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="listbox clearfix" >
+    <view class="itembox" wx:for="{{list}}"  wx:key="key" >
+      <navigator url="{{item.url}}" hover-class='none' class="ibox">
+        <view class="imgbox">
+          <view class="{{item.classname}}" style="color:{{item.color}}"></view>
+        </view>
+        <text class="text">{{item.title}}</text>
+      </navigator>
+    </view>
+</view>
+
+<!-- 商家展示 -->
+<!-- <view class="showbox clearfix">
+  <view class="title">商家展示</view>
+  <view class='showList clearfix' wx:for="{{showList}}" wx:key="key" id="{{item.id}}">
+    <view class="showitem clearfix">
+      <text class="text0">{{item.text0}}</text>
+      <text class="text1">{{item.text1}}</text>
+      <image src="{{item.img}}"></image>
+    </view>
+  </view>
+</view> -->
+
+
+<!-- 产品展示  -->
+<view class="goodsbox">
+  <view class="title">产品展示</view>
+  <view wx:for="{{goodsList}}" wx:key="key" class="goods" bindtap='join' data-id="{{index}}">
+    <image src="{{item.imgSrc}}" mode="aspectFill" style="border-radius:20rpx;"></image>
+      <view class="name ">{{item.goodsName}}</view>
+      <view class="clearfix">
+        <view class="price"><text style="font-weight:normal;font-size:30rpx;">价格</text> ￥{{item.price}}</view>
+        <view class="oldprice">原价￥{{item.oldPrice}}</view>
+      </view>
+  </view>
+</view>
+
+
+
+
+

@@ -1,0 +1,13 @@
+/* pages/address/address.wxss */
+
+.bottombox{overflow:hidden;position: fixed;bottom:0;width:100%;}
+.bottombox view{float: left;width:50%;text-align: center;font-size: 35rpx;height:100rpx;line-height:100rpx;color:#fff;}
+.weixin{background:#09bb07;}
+.add{background:#fb4b48;}
+
+.info{width:80%;overflow:hidden;font-size: 35rpx;border:1px solid #ccc;margin:30rpx auto;padding:20rpx;border-radius:10rpx;box-shadow: 2px 2px 5px #ccc, -2px -2px 5px #ccc;}
+.default{float:left;color:#727272;}
+.caozuo{float:left;border-top:1px solid #ccc;width:100%;padding-top:30rpx;}
+.edit,.remove{float:right;margin-left:20rpx;color:#727272;}
+.username,.phone{float:left;margin-right:30rpx;color:#424242;}
+.city{float:left;color:#727272;padding:20rpx 0;}

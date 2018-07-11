@@ -1,0 +1,116 @@
+<scroll-view scroll-x="true"  class="scroll-view_H list-liu">
+ 
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==0?'on':''}}" data-current="0" bindtap="swichNav" hover-class="eee">衬衫</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==1?'on':''}}" data-current="1" bindtap="swichNav" hover-class="eee">男装</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==2?'on':''}}" data-current="2" bindtap="swichNav" hover-class="eee">礼服</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==3?'on':''}}" data-current="3" bindtap="swichNav" hover-class="eee">棉服</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==4?'on':''}}" data-current="4" bindtap="swichNav" hover-class="eee">卫衣</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==5?'on':''}}" data-current="5" bindtap="swichNav" hover-class="eee">短外套</view>
+</scroll-view>
+
+ 
+
+
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab" class="secSwiper" style="height:{{wHeight}};">
+
+<!-- 衬衫  -->
+    <swiper-item >
+     <scroll-view scroll-y="true" style="height:{{wHeight}};" class="clearfix scroll">
+      <view class="goodsbox">
+          <view wx:for="{{chenshanList}}" wx:key="key" class="goods" bindtap='join' data-index="{{item.goodsID}}" data-current="{{currentTab}}">
+            <image src="{{item.imgSrc}}" mode="aspectFill" style="border-radius:20rpx;"></image>
+              <view class="name ">{{item.goodsName}}</view>
+              <view class="clearfix">
+                <view class="price"><text style="font-weight:normal;font-size:30rpx;">价格</text> ￥{{item.price}}</view>
+                <view class="oldprice">原价￥{{item.oldPrice}}</view>
+              </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+<!-- 男装  -->
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{wHeight}};" class="clearfix scroll">
+      <view class="goodsbox">
+          <view wx:for="{{nanzhuangList}}" wx:key="key" class="goods"  bindtap='join' data-index="{{item.goodsID}}" data-current="{{currentTab}}">
+            <image src="{{item.imgSrc}}" mode="aspectFill" style="border-radius:20rpx;"></image>
+              <view class="name ">{{item.goodsName}}</view>
+              <view class="clearfix">
+                <view class="price"><text style="font-weight:normal;font-size:30rpx;">价格</text> ￥{{item.price}}</view>
+                <view class="oldprice">原价￥{{item.oldPrice}}</view>
+              </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+    <!-- 礼服  -->
+    <swiper-item >
+      <scroll-view scroll-y="true" style="height:{{wHeight}};" class="clearfix scroll">
+      <view class="goodsbox">
+          <view wx:for="{{lifuList}}" wx:key="key" class="goods"  bindtap='join' data-index="{{item.goodsID}}" data-current="{{currentTab}}">
+            <image src="{{item.imgSrc}}" mode="aspectFill" style="border-radius:20rpx;"></image>
+              <view class="name ">{{item.goodsName}}</view>
+              <view class="clearfix">
+                <view class="price"><text style="font-weight:normal;font-size:30rpx;">价格</text> ￥{{item.price}}</view>
+                <view class="oldprice">原价￥{{item.oldPrice}}</view>
+              </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+<!-- 棉服  -->
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{wHeight}};" class="clearfix scroll">
+      <view class="goodsbox">
+          <view wx:for="{{mianfuList}}" wx:key="key" class="goods"  bindtap='join' data-index="{{item.goodsID}}" data-current="{{currentTab}}">
+            <image src="{{item.imgSrc}}" mode="aspectFill" style="border-radius:20rpx;"></image>
+              <view class="name ">{{item.goodsName}}</view>
+              <view class="clearfix">
+                <view class="price"><text style="font-weight:normal;font-size:30rpx;">价格</text> ￥{{item.price}}</view>
+                <view class="oldprice">原价￥{{item.oldPrice}}</view>
+              </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+
+<!-- 卫衣  -->
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:{{wHeight}};" class="clearfix scroll">
+      <view class="goodsbox">
+          <view wx:for="{{weiyiList}}" wx:key="key" class="goods"  bindtap='join' data-index="{{item.goodsID}}" data-current="{{currentTab}}">
+            <image src="{{item.imgSrc}}" mode="aspectFill" style="border-radius:20rpx;"></image>
+              <view class="name ">{{item.goodsName}}</view>
+              <view class="clearfix">
+                <view class="price"><text style="font-weight:normal;font-size:30rpx;">价格</text> ￥{{item.price}}</view>
+                <view class="oldprice">原价￥{{item.oldPrice}}</view>
+              </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    
+    <!-- 短外套  -->
+    <swiper-item >
+        <scroll-view scroll-y="true" style="height:{{wHeight}};" class="clearfix scroll">
+      <view class="goodsbox">
+          <view wx:for="{{duanwaitaoList}}" wx:key="key" class="goods"  bindtap='join' data-index="{{item.goodsID}}" data-current="{{currentTab}}">
+            <image src="{{item.imgSrc}}" mode="aspectFill" style="border-radius:20rpx;"></image>
+              <view class="name ">{{item.goodsName}}</view>
+              <view class="clearfix">
+                <view class="price"><text style="font-weight:normal;font-size:30rpx;">价格</text> ￥{{item.price}}</view>
+                <view class="oldprice">原价￥{{item.oldPrice}}</view>
+              </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+</swiper>

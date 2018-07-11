@@ -1,0 +1,101 @@
+<!--pages/common/detail.wxml-->
+<view class="page">
+ 
+<view class="main">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imglist}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='widthFix' />
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+    <view class="tag">
+      <view class="red">爆款特卖</view>
+      <view class="box"><text></text></view>
+      <view class="yellow">优惠价 ￥{{price}}</view>
+    </view>
+
+    <view class="namebox">
+      <view class="name">{{goodsName}}</view>
+      <view class="clearfix">
+        <view class="price fl">价格：￥{{price}}</view>
+        <view class="buynumber fl">销量：{{buynumber}}</view>
+      </view>
+    </view>
+
+  <view class="namebox" >
+    <icon type="success" size="20"/>
+    <text>正品保证</text>
+    <icon type="success" size="20" style="margin-left:50rpx"/>
+    <text>七天退换货</text>
+  </view>
+
+  <view class="detail"><text class="strong">【产品详情】</text>{{detail}}</view>
+
+
+</view>
+
+
+
+  <view class="btnbox clearfix" >
+    <view class="user fl">
+        <contact-button type="default-dark" size="22" session-from="weapp" class="guest-button"></contact-button>
+        <view>客服</view>  
+    </view>
+    <view class="shoucang fl" bindtap='shoucang'>
+        <image src="../../images/sc0.png" style="width:55rpx;height:55rpx;" wx-if="{{sc}}"></image>
+        <image src="../../images/sc1.png" style="width:55rpx;height:55rpx;"  wx:else></image>
+        <view>收藏</view>  
+    </view>
+
+
+    <view class="gouwuche fl" style="position:relative">
+     <navigator url="../shopcar/shopcar?num={{num}}" open-type='reLaunch'   hover-class='none'>
+        <image src="../../images/car.png" style="width:55rpx;height:55rpx;margin-top:15rpx;" ></image>
+        <text class="weui-badge" wx-if="{{hasBadge}}" style="position: absolute;left:70rpx">{{num}}</text>
+        <view>购物车</view>  
+      </navigator>
+    </view>
+
+   
+    <view class="join fl" bindtap='join'>加入购物车</view>
+ 
+    <!-- <navigator url="../confirm/confirm?id={{goodsID}}" > -->
+      <view class="buy fl" bindtap="buy">立即购买</view>
+    <!-- </navigator>  -->
+  </view>
+</view>
+
+<!--遮罩层  -->
+<view class="viewmask" wx-if="{{hasMask}}">
+  <view class="mask clearfix">
+      <view class="goodsitem clearfix">
+          <image src="{{imglist[0]}}" class="fl" mode=''></image>
+          <view class="fl itemcontent clearfix">
+           <icon type="cancel" color="#333" class="fr" bindtap='del'></icon>
+            <view style="margin:20rpx 0 10rpx 20rpx;">{{goodsName}}</view>
+            <view class="flbox">
+              <view class="fl price" style="margin-left:10rpx">￥{{price}}</view>
+              <view class="fl buynumber">销量：{{buynumber}}</view>
+            </view>
+          </view>
+      </view>
+
+      <view class="optbox">
+        <view class="fl">数量</view>
+        <view class="fr numbox clearfix">
+            <view class="fl less" bindtap='less'> -</view>
+            <input class="fl inputitem" value="{{num}}" disabled></input>
+            <view class="fl add" bindtap='add'>+</view>
+        </view>
+      </view>
+
+      <view class="maskbtn">
+        <view class="fl allprice">总价：<text style="color:#fff">￥{{price*num}}</text></view>
+        <view class="fl jiaru" bindtap='confirm'>加入购物车</view>
+      </view>
+  </view>
+</view>

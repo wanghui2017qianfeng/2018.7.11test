@@ -1,0 +1,46 @@
+<!--pages/address/address.wxml-->
+
+<view class="info" wx:if="{{username}}">
+  <view>
+    <text class="username">{{username}}</text>
+    <text class="phone">{{phone}}</text>
+    <view class="city">{{city}}{{address}}</view>
+    <view class="caozuo">
+      <view class="default">
+       <!-- <icon type="success" color="{{iconcolor}}" class="opt" bindtap='opt' size="15"></icon> -->
+       <icon wx:if="{{isOpt}}" type="success" size="20" class="icon fl" bindtap='moren'/>
+        <icon wx:else type="circle" size="20"  class="icon fl" bindtap='moren'/> 
+      设为默认
+      </view>
+
+      <view class="remove" bindtap="remove">
+       <image src="../../images/remove.png" style="width:40rpx;height:40rpx;" mode="aspectFit"></image>删除</view>
+      <view class="edit" bindtap="edit">
+        <image src="../../images/edit.png" style="width:40rpx;height:40rpx;" mode="aspectFit"></image>编辑</view>
+
+      
+
+    </view>
+
+    </view>
+
+</view>
+
+
+
+
+<view wx:for="{{addresslist}}" wx:key="key">
+    <view>{{item.username}}</view>
+</view>
+
+<view class="bottombox">
+  <view class="weixin" bindtap='address'>使用微信地址</view>
+  <view class="add" bindtap='add'>添加收货地址</view>
+</view>
+
+
+
+
+
+
+

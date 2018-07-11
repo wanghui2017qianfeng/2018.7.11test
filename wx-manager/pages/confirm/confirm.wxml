@@ -1,0 +1,74 @@
+<!--pages/confirm/confirm.wxml-->
+<view class="top clearfix">
+  <navigator url="../address/address" hover-class='none'>
+    <view class="left">
+      <view class="iconfont icon-lianxiwomen"></view>
+   
+      <view class="info">
+        <text class="username">收货人： {{username}}</text>
+        <text class="phone">{{phone}}</text>
+        <view class="city">收货地址：{{address}}</view>
+      </view>
+    </view>
+    </navigator> 
+    <view class="caozuo">
+      <view class="default">
+        <icon wx:if="{{isOpt}}" type="success" size="20" class="icon fl" bindtap='moren'/>
+        <icon wx:else type="circle" size="20"  class="icon fl" bindtap='moren'/> 
+      设为默认
+      </view>
+  </view>
+  
+</view>
+
+
+<view class="boxbody">
+    <!-- <view class="biaoti clearfix">
+      <navigator url="../common/company" class="company" hover-class='none'>聚启创客</navigator>
+      <navigator url="../common/contact" class="contact" hover-class='none'>联系商家</navigator>  
+    </view>-->
+    <view wx:for="{{buylist}}" wx:key="key">
+      <view class="box1 clearfix">
+        <navigator url="../shopcar/shopcar?id=1" open-type="reLaunch" hover-class='none'>
+          <image src="{{item.imgSrc}}" style="width:200rpx;height:200rpx;" mode="aspectFill"></image>
+          <view class="number clearfix ">
+            <view class="name fl">{{item.goodsName}}</view>
+            <view class="clearfix fl count">
+              <view class="fl price" style="text-align:right;font-size：35rpx;">￥{{item.price}}</view>
+              <view  class="fr itemnum">
+                <image src="../../images/edit.png" style="width:40rpx;height:40rpx;margin-right:10rpx;" mode="aspectFill"></image>x{{item.number}}</view>
+            </view>
+          </view> 
+        </navigator>
+      </view>
+    </view>
+
+    <view style="padding:0 20rpx;height:100rpx;line-height:100rpx;border-top:20rpx solid #f5f5f5;border-bottom:10rpx solid #f5f5f5;">
+          <text class="fl">商品总价</text>  
+          <text class="fr">￥{{allprice}}</text>
+      </view>
+
+      <view style="padding:0 20rpx;height:100rpx;line-height:100rpx;border-bottom:10rpx solid #f5f5f5;">
+          <text class="fl">打折减</text>  
+          <text class="fr" style="color:#ef5f7a">-￥0.00</text>
+      </view>
+
+
+      <view style="padding:0 20rpx;height:100rpx;line-height:100rpx;border-bottom:10rpx solid #f5f5f5;" class="clearfix">
+          <text class="fl">邮费</text>  
+          <text class="fr" style="color:#ef5f7a">+￥0.00</text>
+      </view>
+  </view>
+
+
+
+
+
+<view class="bottom clearfix">
+    <view class="fl lbox clearfix"> 
+      <text class="fl alltext">总价:</text>
+      <text class="allprice fl">￥{{allprice}}元</text>
+      <view class="all fr">共<text style="color:#fc5449;">{{allnum}}</text>件商品</view>
+    </view> 
+    <view class="tijiao fl" bindtap='pay'>提交</view>
+</view>

@@ -1,0 +1,16 @@
+<view>
+    <view wx:for="{{storeList}}" wx:key="key" class="shop clearfix" >
+      <view class="clearfix" bindtap='join' data-id="{{index}}">
+        <image src="{{item.img}}"></image>
+        <view class="title">{{item.name}}</view>
+      </view>
+      <view class="content {{item.isFold ? 'hide':'show'}}">
+        <text>{{item.intro}}</text>
+      </view>
+      <view bindtap="showAll" data-index="{{index}}">
+        <image src=" {{item.isFold ? '../../images/down.png':'../../images/up.png'}}" style="width:60rpx;height:60rpx;margin-left:290rpx;"></image>
+      </view>
+    </view>
+</view>
+
+<view class="fBtn" bindtap='fenlei'>分类</view>

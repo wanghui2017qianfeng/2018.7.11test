@@ -1,0 +1,74 @@
+/**index.wxss**/
+.slide-image{width:100%;}
+swiper {height:400rpx;margin-top:100rpx;}
+
+.listbox{padding-top:20rpx;padding-bottom:20rpx;border-bottom:1rpx solid #ccc;text-align: center;background:#fff;border-radius:30rpx;width:100%;margin-top:-20rpx;z-index:3;}
+.listbox .ibox{float:left;}
+.listbox .imgbox{width:110rpx;height:110rpx;border-radius:50%;margin:21rpx 21rpx 0;box-sizing:border-box;line-height:110rpx;}
+.iconfont{font-size:65rpx;margin-bottom:0;}
+.text{font-size:25rpx;top:-10rpx;color:#333;}
+
+.listbox  .imgbox{
+background: #b9d1ff; 
+background: -moz-linear-gradient(top, #b9d1ff 1%, #eff7ff 99%);
+background: -webkit-linear-gradient(top, #b9d1ff 1%,#eff7ff 99%); 
+background: linear-gradient(to bottom, #b9d1ff 1%,#eff7ff 99%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d1ff', endColorstr='#eff7ff',GradientType=0 );
+  }
+
+
+
+
+/*商家展示  */
+.showbox{background:#fff;}
+.showbox .title{border-left:3px solid #e93b3d;font-weight:700;padding-left:30rpx;font-size:40rpx;color:#333;margin-top:30rpx;}
+
+.showList{ 
+   float:left;
+   width:350rpx;
+   margin:12rpx;
+   height:220rpx;
+   border-radius:20rpx;
+   box-sizing: border-box;
+   padding-left:20rpx;
+   
+}
+ .showitem .text0{float:left;font-size: 35rpx;font-weight:700;position: absolute;color:#fff;margin-top:50rpx;}
+ .showitem .text1{float:left;font-size: 30rpx;font-weight:700;color:#fff;position: absolute;margin-top:100rpx;}
+ .showitem image{width:200rpx;height:220rpx;float:right;} 
+
+#show1{
+  background: #607ff7;
+  background: -moz-linear-gradient(left, #607ff7 1%, #60adff 100%); 
+  background: -webkit-linear-gradient(left, #607ff7 1%,#60adff 100%); 
+  background: linear-gradient(to right, #607ff7 1%,#60adff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#607ff7', endColorstr='#60adff',GradientType=1 );
+
+}
+#show2{
+  background: #e15b6b; 
+  background: -moz-linear-gradient(left, #e15b6b 1%, #fe8744 100%); 
+  background: -webkit-linear-gradient(left, #e15b6b 1%,#fe8744 100%); 
+  background: linear-gradient(to right, #e15b6b 1%,#fe8744 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e15b6b', endColorstr='#fe8744',GradientType=1 ); 
+}
+
+#show3{
+  background: #a948ff;
+  background: -moz-linear-gradient(left, #a948ff 1%, #8578ff 100%); 
+  background: -webkit-linear-gradient(left, #a948ff 1%,#8578ff 100%); 
+  background: linear-gradient(to right, #a948ff 1%,#8578ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a948ff', endColorstr='#8578ff',GradientType=1 ); 
+}
+
+#show4{
+  background: #ff8d1c; 
+  background: -moz-linear-gradient(left, #ff8d1c 0%, #ffd159 93%); 
+  background: -webkit-linear-gradient(left, #ff8d1c 0%,#ffd159 93%); 
+  background: linear-gradient(to right, #ff8d1c 0%,#ffd159 93%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8d1c', endColorstr='#ffd159',GradientType=1 );
+}
+
+
+/*产品展示  */
+.goodsbox .title{border-left:3px solid #e93b3d;font-weight:700;padding-left:30rpx;font-size:40rpx;color:#333;margin-top:30rpx;}

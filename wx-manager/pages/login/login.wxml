@@ -1,0 +1,28 @@
+<view>
+  <view class="imagebox">
+    <image src="../../images/login.jpg" style="width:100%;height:{{wHeight}}"></image>
+  </view>
+
+<view class="login">
+  <text class="title">Welcome</text>
+
+  <view class="username box clearfix">
+      <text class="iconfont icon-zhanghao"></text>
+      <input type='text' placeholder='用户名' placeholder-style="color:#fff" bindinput="bindUser"></input>
+  </view>
+
+  <view class="password box clearfix">
+      <text class="iconfont icon-mima"></text>
+      <input type='password' placeholder='密码' placeholder-style="color:#fff" bindinput="bindPass"></input>
+  </view>
+
+
+  <view class="loginBtn" bindtap="bind">绑定</view>
+
+
+</view>
+  
+
+
+</view>
+

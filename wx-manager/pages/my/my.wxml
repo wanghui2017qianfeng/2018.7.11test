@@ -1,0 +1,51 @@
+
+<view class="top clearfix">
+  <view class="img fl ">
+    <image src="{{imgSrc}}"></image>
+  </view>
+  <view class="cont fl">
+    <view class='name'>{{name}}</view> 
+    <view class='phone'>{{phone}}</view> 
+  </view>
+
+  <view class="day fl">
+      <text>剩余天数：{{day}}天</text>
+  </view>
+</view>
+
+<view class="order">
+    <view class="myorder clearfix">
+        <text class="fl">我的订单</text>
+        <text class='fr' bindtap='lookOrder'>查看全部 ></text>
+    </view>
+
+
+    <view class="clearfix itembox">
+      <view wx:for="{{orderList}}" wx:key="{{key}}" class="item">
+        <navigator url="../order/order?current={{item.id}}">
+          <view class="{{item.color}} iconbox">
+              <text class="iconfont {{item.icon}}"></text>
+          </view>
+          <text class="txt">{{item.text}}</text>
+        </navigator>
+      </view>
+    </view> 
+</view>
+
+
+<view class="three">
+    <view wx:for="{{threelist}}" wx:key="{{key}}" class="box0">
+      <navigator url='{{item.url}}'>
+          <view class="clearfix">
+              <text class="fl">{{item.name}}</text>
+              <image src="../../images/rrow.png" class="fr" style="width:35rpx;height:35rpx;display:inline-block;margin-top:15rpx;"></image>
+          </view>
+      </navigator>
+    </view>
+
+</view>
+
+
+
+
+

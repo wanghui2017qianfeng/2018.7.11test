@@ -1,0 +1,10 @@
+.topsearch{padding-left:15rpx;}
+
+
+.main{margin-top:100rpx;padding:0 20rpx;}
+
+.store{padding:20rpx 0;border-bottom:1px solid #ccc;position: relative}
+.title{font-size:35rpx;margin-bottom:10rpx;margin-top:10rpx;}
+.sec{font-size:35rpx;color:#afafaf;display: block;float: left;width:200rpx;}
+
+/* .xl{margin-left:20rpx;} */

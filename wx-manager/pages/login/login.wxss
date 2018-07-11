@@ -1,0 +1,31 @@
+page{overflow-y: hidden;}
+
+
+
+
+.login{
+  position: fixed;
+  z-index:3;
+  top:200rpx;
+  width:90%;
+  left:5%;
+  text-align: center;
+  
+}
+
+.title{color:#fff;font-size:60rpx;}
+.iconfont{font-size:45rpx;float: left;border-right:1px solid #fff;display: block;padding-right:30rpx;color:#fff;}
+input{float:left;height: 72rpx;display: block;text-align: left;margin-left:20rpx;width:380rpx;color:#fff}
+.box{width:90%;margin-left:5%;margin-top:50rpx;background: rgba(255,255,255,0.3);padding:20rpx;box-sizing: border-box;}
+
+.loginBtn{
+  width:90%;
+  margin-left:5%;
+  margin-top:50rpx;
+  height:110rpx;
+  line-height:110rpx;
+  background: #fff;
+  font-size:45rpx;
+ font-family: "微软雅黑";
+color:#333;
+}

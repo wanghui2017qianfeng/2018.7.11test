@@ -1,0 +1,49 @@
+/* pages/store/store.wxss */
+
+ .top{
+   width:100%;
+   padding-bottom:20rpx;
+    background: #a948ff;
+    background: -moz-linear-gradient(left, #a948ff 1%, #8578ff 100%); 
+    background: -webkit-linear-gradient(left, #a948ff 1%,#8578ff 100%); 
+    background: linear-gradient(to right, #a948ff 1%,#8578ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a948ff', endColorstr='#8578ff',GradientType=1 ); 
+} 
+
+.sousuo{width:650rpx;border:1px solid #ccc;padding:15rpx 30rpx;border-radius:100rpx;background: #fcf7f1;margin-top:20rpx;margin-left:20rpx;}
+.sousuo{color:#afafaf;}
+
+.store{margin-top:50rpx;padding-left:20rpx;color:#fff;position: relative}
+.title{font-size:35rpx;margin-bottom:10rpx;}
+.sec{font-size:30rpx;display: block;float: left;width:130rpx;}
+.sc{
+  border-right:2px solid #fff;
+  margin-right:20rpx;
+}
+
+.scBtn{
+  width:130rpx;
+  height:60rpx;
+  border-radius:50rpx;
+  padding:5rpx 10rpx;
+  font-size:35rpx;
+  text-align: center;
+  line-height:60rpx;
+  position:absolute;
+  right:30rpx;
+  top:50rpx;
+  background: #ff797d;
+  background: -moz-linear-gradient(left, #ff797d 0%, #ff4499 100%); 
+  background: -webkit-linear-gradient(left, #ff797d 0%,#ff4499 100%);
+  background: linear-gradient(to right, #ff797d 0%,#ff4499 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff797d', endColorstr='#ff4499',GradientType=1 );
+}
+
+
+
+.goodsbox{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;width:100%;font-size:35rpx;background:#f6f6f6;}
+.goods{display: flex;background: #fff; width:350rpx;flex-direction: column;border:1px solid #ededed;margin:10rpx 0;padding-bottom:20rpx;border-radius:20rpx;}
+.goods .name{overflow:hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom:10rpx;font-size:35rpx;color:#333;font-weight:600;padding-left:10rpx;}
+.price{color:#de3d96;font-weight:600;padding-left:10rpx;}
+.oldprice{color:#bdbdbd;text-decoration:line-through;font-size:28rpx;margin-top:10rpx;padding-left:10rpx;}
+.goods image{width:350rpx;height:400rpx}

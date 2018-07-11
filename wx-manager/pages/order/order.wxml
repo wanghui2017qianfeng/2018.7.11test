@@ -1,0 +1,68 @@
+<scroll-view scroll-x="true"  class="scroll-view_H list-liu">
+ 
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==0?'on':''}}" data-current="0" bindtap="swichNav" hover-class="eee">全部</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==1?'on':''}}" data-current="1" bindtap="swichNav" hover-class="eee">待付款</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==2?'on':''}}" data-current="2" bindtap="swichNav" hover-class="eee">待发货</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==3?'on':''}}" data-current="3" bindtap="swichNav" hover-class="eee">待收货</view>
+  <view class="scroll-view-item_H swiper-tab-list {{currentTab==4?'on':''}}" data-current="4" bindtap="swichNav" hover-class="eee">待评价</view>
+
+</scroll-view>
+
+ 
+
+
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab" class="secSwiper" style="height:{{wHeight}};">
+
+<!-- 衬衫  -->
+    <swiper-item >
+        <view class="all">
+          <image src="../../images/order.png" mode="widthFix"></image>
+          <view>全部： 您还没有相关订单!</view>
+        </view> 
+    </swiper-item>
+
+
+<!-- 男装  -->
+    <swiper-item>
+      <view class="all">
+          <image src="../../images/order.png" mode="widthFix"></image>
+          <view>待付款：您还没有相关订单!</view>
+        </view> 
+    </swiper-item>
+
+
+    <!-- 礼服  -->
+    <swiper-item >
+      <view class="all">
+          <image src="../../images/order.png" mode="widthFix"></image>
+          <view>待发货： 您还没有相关订单!</view>
+        </view> 
+    </swiper-item>
+
+
+<!-- 棉服  -->
+    <swiper-item>
+     <view class="all">
+          <image src="../../images/order.png" mode="widthFix"></image>
+          <view>待收货： 您还没有相关订单!</view>
+        </view> 
+    </swiper-item>
+
+
+<!-- 卫衣  -->
+    <swiper-item>
+      <view class="all">
+          <image src="../../images/order.png" mode="widthFix"></image>
+          <view>待评价：您还没有相关订单!</view>
+        </view> 
+    </swiper-item>
+    
+    <!-- 短外套  -->
+    <!-- <swiper-item >
+        <view class="all">
+          <image src="../../images/order.png" mode="widthFix"></image>
+          <view>全部： 您还没有相关订单!</view>
+        </view> 
+    </swiper-item> -->
+
+</swiper>

@@ -1,0 +1,32 @@
+
+
+<view class="topsearch clearfix">
+  <view class="clearfix sousuobox fl">
+    <view class="jq fl">JQ</view>
+    <input placeholder='搜索' class="sousuo fl"></input>
+  </view> 
+  <view class="fl searchbox" bindtap='search'>
+    <image src="../../images/sousuo.png" style="width:70rpx;height:70rpx" mode="aspectFill" class="fl"></image>
+  </view>
+</view>
+
+
+
+<view class="main">
+  <scroll-view scroll-y>
+
+     <view wx:for="{{storeList}}" wx:key="key" class="store clearfix" bindtap="join" data-index="{{index}}">
+        <image src="{{item.img}}" style="width:120rpx;height:120rpx;float:left;border-radius:20rpx;margin-right:20rpx"></image>
+        <view class="title">{{item.name}}</view>
+        <view class="clearfix">
+            <text class='sc sec'>付费</text>
+            <!-- <text class="xl sec">销量{{item.xlNum}}</text> -->
+        </view>
+        <view>
+            <image src="../../images/rrow.png" style="width:40rpx;height:40rpx;position:absolute;right:0;top:55rpx;"></image>
+        </view> 
+     </view>
+
+  </scroll-view>
+
+</view>

@@ -1,0 +1,39 @@
+/**app.wxss**/
+@import "font/iconfont.wxss";
+@import "weui.wxss";
+
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{display: block;content:"";clear:both;}
+
+
+/*搜索  */
+
+.topsearch{background:#e8e8e8;height:100rpx;box-sizing:border-box;padding-top:15rpx;position: fixed;top:0;z-index:10;width:100%;}
+.sousuobox{padding:10rpx 45rpx 10rpx 20rpx;background:#fff;border-radius:10rpx;width:600rpx;margin:0 auto;left:20rpx;display: block;}
+.jq{font-weight: 900;color:#e93b3d; height:50rpx;line-height:50rpx;padding-right:20rpx;border-right:1px solid #ccc;margin-right:10rpx;}
+.sousuo{height:50rpx;font-size:35rpx;margin-left:10rpx;float:left;width:450rpx;}
+
+
+/*产品展示  */
+
+.goodsbox{width:100%;font-size:35rpx;}
+.goods{background: #fff; width:330rpx;border:1px solid #ededed;margin:15rpx 20rpx;padding-bottom:20rpx;border-radius:20rpx;float:left;}
+.goods .name{overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size:35rpx;color:#333;font-weight:600;padding-left:10rpx;}
+.price{color:#c80611;font-weight:600;padding-left:10rpx;}
+.oldprice{color:#bdbdbd;text-decoration:line-through;font-size:28rpx;padding-left:10rpx;}
+.goods image{width:330rpx;height:400rpx}
+
+.scroll{background:#f5f5f5;margin-top:85rpx;}

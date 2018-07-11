@@ -1,0 +1,40 @@
+/* pages/confirm/confirm.wxss */
+.clearfix:after{content:"";display:block;clear:both;}
+.top{font-size:35rpx;color:#333;border-bottom:30rpx solid #efefef;border-top:10rpx dashed #ff87a2;padding-top:20rpx;}
+
+.iconfont{display: block;width:100rpx;height:170rpx;font-size: 80rpx;text-align:center;line-height:170rpx;float: left;margin-right:20rpx;}
+.info{float:left;width:600rpx;}
+.city{font-size:30rpx;letter-spacing: 3rpx;}
+.left{border-bottom:1px solid #ccc;}
+.left:after{content:"";display:block;clear:both;}
+.phone{margin-left:20rpx;}
+.caozuo{float:left;margin-left:120rpx;padding:10rpx;}
+.icon{margin-right:10rpx;}
+ /* .caozuo .icon{float:left;position:absolute;}  */
+
+.biaoti{font-size: 35rpx;padding:20rpx 30rpx;color:#333;border-bottom:10rpx solid #f5f5f5;}
+.biaoti .company{float:left;}
+.biaoti .contact{float:right;}
+
+
+.boxbody{font-size: 35rpx;color:#333;margin-bottom:100rpx;}
+
+.box1 image{float:left;}
+.box1 .number{float:left;width:500rpx;}
+.number{margin-left:20rpx;padding-top:30rpx;}
+.name{width:350rpx;height:100rpx;overflow: hidden;color:#000;font-weight:500;}
+.count{width:150rpx;color:#545454;}
+.count .itemnum{margin-top:20rpx;}
+
+.fl{float:left;}
+.fr{float:right;}
+
+
+
+.bottom{position: fixed;bottom:0;height:100rpx;width: 100%; text-align:center;line-height:100rpx;box-shadow:0px -2px 3px #ccc;z-index:6;background:#fff;}
+.bottom .lbox{width:70%;}
+.alltext{font-size:35rpx;}
+.allprice{color:#fc5449;font-size:40rpx}
+.bottom .fr{font-size:30rpx;color:#999999}
+.all{font-size:35rpx;}
+.tijiao{background:#2daeef;height:100rpx;width:30%;color:#fff;}

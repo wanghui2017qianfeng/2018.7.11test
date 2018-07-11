@@ -1,0 +1,44 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class="page">
+  <view class="main">
+    <view class="clearfix itembox"  wx:for="{{carlist}}" wx:key="key" wx:if="{{carlist}}">
+      <icon wx:if="{{item.selected}}" type="success" size="20" class="my-check fl" data-index="{{index}}" bindtap="mycheck" />
+      <icon wx:else type="circle" size="20"  class="my-check fl" bindtap="mycheck" data-index="{{index}}"/>  
+
+      <navigator url="../common/detail?id={{item.goodsID}}" hover-class='none'>
+        <image src="{{item.imgSrc}}" style="width:200rpx;height:200rpx;" mode="aspectFill"></image>
+      </navigator>
+      <view class="left1 ">
+        <view>{{item.goodsName}}</view>
+        <view class="numbox">
+          <view style="border-right:1px solid #ccc" data-index="{{index}}" data-param="{{item.goodsID}}" bindtap='less'>-</view>
+          <input value='{{item.number}}' disabled="true"></input>
+          <view style="border-left:1px solid #ccc" data-index="{{index}}"  data-param="{{item.goodsID}}" bindtap='add'>+</view>
+        </view>
+      </view>
+      <view class="right clearfix">
+        <view class="price">￥{{item.price}}</view>
+        <view class="del fr" data-index="{{index}}" bindtap='remove'>删除</view>
+      </view>
+    </view>
+    
+<!--若没有商品  -->
+    <view wx:if="{{!carlist}}"  class="clearfix" >
+        <image src="../../images/kong.png" style="width:300rpx;display:block;margin-left:225rpx;" mode="widthFix" class="fl"></image>
+        <view  class="fl" style="width:750rpx;text-align:center;margin-top:50rpx;">购物车空空如也，去逛逛吧~~~</view>
+    </view>
+
+    
+  </view>
+ 
+
+  <view class="countbox clearfix">
+    <view class="fl allopt">
+      <icon wx:if="{{isAll}}" type="success" size="20" class="all-check fl" bindtap='allcheck'/>
+      <icon wx:else type="circle" size="20"  class="all-check fl" bindtap='allcheck'/>  
+      <text>全选</text>
+    </view>
+    <view class="fl money">合计：<text>￥{{allprice}}</text></view>
+    <view class="jiesuan fl" bindtap="jiesuan" >结算</view>
+  </view>
+</view>

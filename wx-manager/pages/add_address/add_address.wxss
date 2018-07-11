@@ -1,0 +1,12 @@
+/* pages/add_address/add_address.wxss */
+@import '../../model/model.wxss';
+
+
+.section:after{content:"";display:block;clear: both;}
+.section{border-bottom:1px solid #ccc;padding:15rpx;font-size:35rpx;}
+text{float:left;display:block;width:150rpx;padding-left:50rpx;}
+input{float: left;width:500rpx;}
+
+.animation-button{width:750rpx;}
+
+.savebtn{position: fixed;height:100rpx;width:100%;background:#2daeef;color:#fff;bottom: 0;text-align: center;line-height:100rpx;}
